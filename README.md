@@ -1,4 +1,4 @@
-# edu_app
+# uniboardView1
 
 Education UI Concept inspiration from dribbble
 

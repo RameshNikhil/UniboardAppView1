@@ -1,4 +1,4 @@
-import 'package:edu_app/Resources.dart';
+import 'package:uniboardView1/Resources.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
@@ -9,7 +9,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
+      title: 'Uniboard View 1',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
@@ -33,7 +33,7 @@ class MyHomePage extends StatelessWidget {
           padding: const EdgeInsets.only(right: 16.0, bottom: 32),
           child: Container(
             child: Text(
-              "Get Startted",
+              "Get Started",
               style: TextStyle(
                   color: Color(0xffE1F5FF),
                   fontSize: 18,
@@ -46,9 +46,16 @@ class MyHomePage extends StatelessWidget {
         height: double.infinity,
         width: double.infinity,
         decoration: BoxDecoration(
-          image: DecorationImage(
-              image: AssetImage("assets/splash.jpg"), fit: BoxFit.fill),
+        gradient: LinearGradient(
+          begin: Alignment(1.0, 1.0),
+          end: Alignment(-1.0, -1.0),
+          stops: [0.1, 0.9],
+          colors: [
+            Color(0xffB993D6),
+            Color(0xff8CA6DB),
+          ],
         ),
+      ),
         child: Padding(
           padding: const EdgeInsets.all(16.0),
           child: Column(
@@ -56,7 +63,7 @@ class MyHomePage extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
               Text(
-                "World's Best",
+                "View Version 1",
                 textAlign: TextAlign.left,
                 style: TextStyle(
                     color: Color(0xffE1F5FF),
@@ -67,7 +74,7 @@ class MyHomePage extends StatelessWidget {
                 height: 16,
               ),
               Text(
-                "Education  Resources",
+                "Uniboard",
                 textAlign: TextAlign.left,
                 style: TextStyle(
                     color: Colors.white,
@@ -78,7 +85,7 @@ class MyHomePage extends StatelessWidget {
                 height: 16,
               ),
               Text(
-                "Anytime, Anywhere, Easy to Learn",
+                "The better way to moodle.",
                 textAlign: TextAlign.left,
                 style: TextStyle(
                     color: Color(0xffE1F5FF),

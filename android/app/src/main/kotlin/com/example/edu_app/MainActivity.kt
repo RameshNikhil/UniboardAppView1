@@ -1,4 +1,4 @@
-package com.example.edu_app
+package com.example.uniboardView1
 
 import android.os.Bundle
 

@@ -36,13 +36,15 @@ class Resources extends StatelessWidget {
                 ),
                 child: Container(
                   decoration: BoxDecoration(
-                  //     image: DecorationImage(
-                  //   fit: BoxFit.fitWidth,
-                  //   image: AssetImage(
-                  //     "assets/splash.jpg",
-                  //   ),
-                  // )
-                  color: Colors.red, 
+                    gradient: LinearGradient(
+                      begin: Alignment(1.0, 1.0),
+                      end: Alignment(-1.0, -1.0),
+                      stops: [0.1, 0.9],
+                      colors: [
+                        Color(0xffB993D6),
+                        Color(0xff8CA6DB),
+                      ],
+                    ),
                   ),
                   child: Padding(
                     padding: const EdgeInsets.all(16.0),
@@ -54,7 +56,7 @@ class Resources extends StatelessWidget {
                           height: 108,
                         ),
                         Text(
-                          "All  Subjects",
+                          "Units",
                           textAlign: TextAlign.left,
                           style: TextStyle(
                               color: Colors.white,
@@ -65,7 +67,7 @@ class Resources extends StatelessWidget {
                           height: 16,
                         ),
                         Text(
-                          "Please select a study subject",
+                          "Please select your unit",
                           textAlign: TextAlign.left,
                           style: TextStyle(
                               color: Color(0xffE1F5FF),
@@ -98,7 +100,7 @@ class Resources extends StatelessWidget {
                         shape: RoundedRectangleBorder(
                             borderRadius:
                                 BorderRadius.all(Radius.circular(12))),
-                        color: Color(0xffeef1f3),
+                        //color: Color(0xffeef1f3),
                         onPressed: () {},
                         child: Center(
                           child: Icon(
@@ -133,14 +135,14 @@ class Resources extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: <Widget>[
                 Text(
-                  "All Subjects",
+                  "Your Units",
                   style: TextStyle(
                       color: Colors.black,
                       fontSize: 18,
                       fontWeight: FontWeight.w900),
                 ),
                 Text(
-                  "See all",
+                  "View all",
                   style: TextStyle(
                       color: Colors.grey[400],
                       fontSize: 14,
@@ -164,6 +166,15 @@ class Resources extends StatelessWidget {
                       height: 160,
                       width: 250,
                       decoration: BoxDecoration(
+                        gradient: LinearGradient(
+                          begin: Alignment(1.0, 1.0),
+                          end: Alignment(-1.0, -1.0),
+                          stops: [0.1, 0.9],
+                          colors: [
+                            Color(0xffB993D6),
+                            Color(0xff8CA6DB),
+                          ],
+                        ),
                         boxShadow: [
                           BoxShadow(
                             color: Color(0xfffafdff),
@@ -174,9 +185,6 @@ class Resources extends StatelessWidget {
                           )
                         ],
                         borderRadius: BorderRadius.all(Radius.circular(24)),
-                        image: DecorationImage(
-                            image: AssetImage("assets/splash.jpg"),
-                            fit: BoxFit.fitWidth),
                       ),
                     ),
                   ),
@@ -221,6 +229,15 @@ class Resources extends StatelessWidget {
                       height: 160,
                       width: 250,
                       decoration: BoxDecoration(
+                        gradient: LinearGradient(
+                          begin: Alignment(1.0, 1.0),
+                          end: Alignment(-1.0, -1.0),
+                          stops: [0.1, 0.9],
+                          colors: [
+                            Color(0xffB993D6),
+                            Color(0xff8CA6DB),
+                          ],
+                        ),
                         boxShadow: [
                           BoxShadow(
                             color: Color(0xfffafdff),
@@ -231,9 +248,6 @@ class Resources extends StatelessWidget {
                           )
                         ],
                         borderRadius: BorderRadius.all(Radius.circular(24)),
-                        image: DecorationImage(
-                            image: AssetImage("assets/splash.jpg"),
-                            fit: BoxFit.fitWidth),
                       ),
                     ),
                   ),
